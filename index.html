@@ -1,0 +1,69 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
+<!-- jade: http://jade-lang.com/ -->
+<!-- haml: http://haml.info/tutorial.html -->
+<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Gomix!</title>
+    <meta name="description" content="A cool thing made with Gomix">
+    <link id="favicon" rel="icon" href="https://gomix.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="public/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet"> 
+  </head>
+  <body>
+
+
+     <p class="bold"></p> 
+    <div class="main">
+        
+    <header class="text-center">
+      <h1>
+       P🍅modoro Tim⏲r
+      </h1>
+    </header>
+     <div class="notice">       
+        <section id= "break" class="break">
+          <div class="notice">Break length(min)</div>  
+          <div>
+            <div class="neg">-</div>
+            <div class="num"></div>
+            <div class="pos">+</div>
+          </div> 
+       </section>      
+        <section id="session" class="session">
+          <div class="notice">Session length(min)</div>  
+          <div >
+            <div class="neg">-</div>
+            <div class="num"></div>
+            <div class="pos">+</div>
+          </div> 
+       </section>  
+    </div>
+    <section>
+      <div id="screen">
+        <div class="control text-center">
+          <h2></h2>
+          <div class="screen pause"></div>
+        </div>
+      </div>
+    </section>
+  
+   </div>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="public/client.js"></script>
+
+  </body>
+</html>

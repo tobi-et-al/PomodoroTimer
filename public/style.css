@@ -1,0 +1,162 @@
+/* styles */
+/* called by your view template */
+
+/* You might want to try something fancier: */
+/* less: http://lesscss.org/ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Monaco, MonoSpace;
+  margin: 25px;
+  color: white;
+} 
+h1 {
+  font-weight: bold;
+  color: white; 
+  font-size: 30px;
+  text-align:center;
+}
+.title {
+  font-weight: bold; 
+}
+
+.bold {
+  font-weight: bold;
+} 
+p {
+  max-width: 600px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: cyan;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}   
+.break {
+  width:50%;
+  float: left;
+  margin-bottom:40px;
+} 
+.session {
+  width:50%;
+  float: right;
+  margin-bottom:40px;
+}
+.main{
+    width: 370px;
+    margin: 0 auto;
+    background: #a7425c;
+    background: linear-gradient(135deg,#a7425c,#993950);
+    padding: 28px;
+    border-radius: 16px;
+}
+.control{
+  text-align: center; 
+}
+.control .screen{
+    text-align: center;
+    font-size: 6em;
+    padding: 20px 0px;
+    margin: 20px 0px;
+    letter-spacing: 5px;
+    cursor: pointer;
+
+}
+.screen:hover {
+    transform: scale(1.1);
+    text-shadow: rgb(65, 130, 156) 6px 3px;
+}
+.ctl{
+  width:170px;
+  height:30px;
+  clear:both;
+}
+.notice{  
+    font-size: 0.9em;
+    clear: both;
+    color: rgb(64, 35, 68);
+}
+.pos{
+    background: rgb(236, 169, 186); 
+    border-radius: 0 30px 30px 0; 
+    height: 30px; 
+    text-align: center;
+    line-height: 27px;
+    margin-top: 7px;
+    cursor: pointer;
+    font-weight: bold; 
+    color: black;
+    width: 25%;
+    float:left;
+}
+.neg{
+    background: rgb(236, 169, 186); 
+    border-radius: 30px 0px 0px 30px;
+    width: 29px;
+    height: 30px; 
+    text-align: center;
+    line-height: 27px;
+    margin-top: 7px;
+    cursor: pointer;
+    font-weight: bold; 
+    color: black;
+    width: 25%;
+    float:left;
+}
+.num {
+    height: 30px;
+    text-align: center;
+    line-height: 27px;
+    margin-top: 7px;  
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 2em; 
+    color: black;
+    width: 33%;
+    float:left;
+
+}
+.neg:hover, .pos:hover {
+    background: #ffe9be;
+} 
+.text-session, .text-break{
+  text-transform: capitalize;
+}
+.text-session{
+    color: #ffb100;
+    -webkit-transition: color 1s ease-in-out;
+    -moz-transition: color 1s ease-in-out;
+    -ms-transition: color 1s ease-in-out;
+    -o-transition: color 1s ease-in-out;
+    transition: color 1s ease-in-out;
+}
+.text-break{ 
+    color: #ffe9be;
+    -webkit-transition: color 1s ease-in-out;
+    -moz-transition: color 1s ease-in-out;
+    -ms-transition: color 1s ease-in-out;
+    -o-transition: color 1s ease-in-out;
+    transition: color 1s ease-in-out;
+
+}
+.text-break .screen {
+    transform: scale(1.1);
+    text-shadow: rgb(65, 130, 156) 6px 3px;
+}
