@@ -8,7 +8,7 @@ $(function() {
   
   var octupus = {
     init: function(){
-      this.set = {'session':{'m': 1},'break':{'m': 1}};
+      this.set = {'session':{'m': 25},'break':{'m': 5}};
       this.mode = 'session';
       this.set[this.mode].s = parseInt(this.set[this.mode].m * 60);
       view.init();
